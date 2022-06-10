@@ -70,36 +70,6 @@ namespace BingoGo_V2
         private void Form1_Load(object sender, EventArgs e)
         {
             
-            /*string n = "861568688536788";
-            int k = 100000;
-
-            MessageBox.Show(Convert.ToString(superDigit(n, k)));/**/
-
-            //load_numbers();
-            //textBox1.Text = "The path for the executable file that " + "started the application is: " + Application.StartupPath;
-            //MessageBox.Show(Convert.ToString(Math.Abs(- 1)));
-        }
-
-        public int superDigit(string n, int k)
-        {
-            long result = 1 + ((long)Convert.ToDouble(n) * k - 1) % 9;
-            return Convert.ToInt32(result);
-            
-            /*if (n.Length == 1)
-            {
-                return Convert.ToInt32(n);
-            }
-            else
-            {
-                double sum = Convert.ToDouble(n.Substring(n.Length - 1));
-                string m = n.Remove(n.Length - 1); //explota aqui con numeros enormes por ejemplo en 9 a la 100000 exploto en la posicion 92864
-
-                return (Convert.ToInt32(sum) + superDigit(m, 1)) * k;
-            }/**/
-            /*if(Convert.ToString(superDigit(n, k)) == n || Convert.ToInt32(n) < 10)
-            {
-                return 
-            }/**/
         }
         private void load_numbers()
         {          
@@ -333,7 +303,6 @@ namespace BingoGo_V2
             /***************************/
             //find lines or diagonals 
             /***************************/
-           // modify_bingo_btn(true);
             if (is_line_X(int.Parse(numberA) - 1, int.Parse(numberB) - 1))
             {
                 modify_bingo_btn(true);
@@ -470,7 +439,6 @@ namespace BingoGo_V2
                     mark_number(btn1, Convert.ToString(x_2), Convert.ToString(y_2));
                     
                     break;
-
             }
 
             finish:
@@ -544,13 +512,12 @@ namespace BingoGo_V2
             int aux = 1;
 
 
-            //reconoger diagoles
+            //reconoger diagonales
             if(x == y)
             {
                 //entonces es diagonal top, except si es el medio
                 while (aux < table_long)
                 {
-                    //if ((y_aux1 - 1) >= 0 && (x_aux1 - 1) >= 0)
                     if ((x_aux1 - 1) + (y_aux1 - 1) >= 0)
                         if (numberMaked[x_aux1 - 1][y_aux1 - 1] != 0) goto finish;
                         else cant_marked++;
@@ -583,7 +550,7 @@ namespace BingoGo_V2
             int aux = 1;
 
 
-            //reconoger diagoles
+            //recorrer diagonales
             if ((x + y) == (table_long - 1))
             {
                 //entonces es diagonal top, except si es el medio
@@ -824,8 +791,7 @@ namespace BingoGo_V2
             btn.Text = "";
             btn.ImageAlign = HorizontalAlignment.Center;
             btn.ImageSize = new Size(60, 60);
-            //btn.Enabled = false;
-
+            
             btn.OnHoverBaseColor = Color.Transparent;
             btn.OnHoverBorderColor = Color.Transparent;
             btn.OnHoverForeColor = Color.White;
