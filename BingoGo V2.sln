@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32428.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BingoGo V2", "BingoGo V2\BingoGo V2.csproj", "{E3AC0CE1-9C19-47C7-A08B-DCD28A310FF4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3AC0CE1-9C19-47C7-A08B-DCD28A310FF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3AC0CE1-9C19-47C7-A08B-DCD28A310FF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3AC0CE1-9C19-47C7-A08B-DCD28A310FF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3AC0CE1-9C19-47C7-A08B-DCD28A310FF4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2054774-9263-4D41-8256-37FF1DC6DCC3}
+	EndGlobalSection
+EndGlobal
